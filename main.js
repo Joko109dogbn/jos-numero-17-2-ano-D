@@ -14,8 +14,13 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
        tecla.onclick = function(){ //cria função anônima para chamar tocaSom
                tocaSom(IDaudio);
           }
-    tecla.onkeydown = function(){
-        tecla.classList.add('ativa');
-        tecla.classList.remove('ativa');
+    tecla.onkeydown = function(evento){
+        if(evento.code!= 'Tab'){
+              tecla.classList.add('ativa');
+        }
+        tecla.onkeyup = function(){
+          tecla.classList.remove('ativa');  
+        }
+        
         }
 }

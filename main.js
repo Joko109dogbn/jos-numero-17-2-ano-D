@@ -16,5 +16,6 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
           }
     tecla.onkeydown = function(){
         tecla.classList.add('ativa');
+        tecla.classList.remove('ativa');
         }
 }

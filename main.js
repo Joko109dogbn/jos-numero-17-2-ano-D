@@ -13,9 +13,9 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
 //estrutura de repetição "while" significa  
 //"enquanto algo acontecer" mudou while para "for" 
 for(let contador = 0; contador < listaDeTeclas.length;contador++) { 
-    const tecla listaDeTeclas [contador]; 
-    const efeito tecla.classList[1]; //acessa o 2º item da classe de teclas 
-    const idAudio #som $(efeito); //template string 
+    const tecla = listaDeTeclas [contador]; 
+    const efeito = tecla.classList[1]; //acessa o 2º item da classe de teclas 
+    const idAudio = #som $(efeito); //template string 
     tecla.onclick = function(){ //cria função anónima para chamar tocaSom ]
         tocaSom(idAudio);
     }
